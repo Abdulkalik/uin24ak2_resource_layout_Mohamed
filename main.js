@@ -20,4 +20,5 @@ function show(character) {
 
     // Fjern "hidden" klassen for å vise artikkelen
     document.getElementById("Article").classList.remove("below");
+
 }
