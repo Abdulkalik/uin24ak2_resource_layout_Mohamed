@@ -46,8 +46,8 @@ nav {
     background-color: var(--purple);
     color: var(--white);
     display: flex;
-    padding: 1rem 1rem;
-    font-weight: bold;
+    padding: 1rem;
+    font-weight: unset;
     border: 1px;
     justify-content: space-between;
     cursor: pointer;
@@ -55,10 +55,9 @@ nav {
 
 /* Stiler for ul og li innenfor #menu */
 #menu ul {
-    list-style-type: none;
+    display: flex;
     padding: 0;
     margin: 0;
-    display: flex;
 }
 
 /* Mellomrom mellom hver li i menyen */
@@ -68,15 +67,8 @@ nav {
 
 /* Tekststiler for lenker innenfor menyen */
 #menu a {
-    text-decoration: none;
     color: var(--white);
 }
-
-/* Endrer stiler for hover-effekt på lenker */
-#menu a:hover {
-    text-decoration: underline;
-}
-
 /* Responsivt design for mindre skjermer (maks bredde 768px) */
 @media (max-width: 768px) {
     #menu {
