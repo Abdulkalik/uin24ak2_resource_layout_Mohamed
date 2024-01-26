@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="nb">
+
+<head>
+    <!-- Angir teksttegnsettet og tilpasser visningsområdet for bedre sidevisning -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <!-- Lenker til den eksterne stilen for utseendet på siden -->
+    <link href="style.css" rel="stylesheet">
+
+    <!-- Setter tittelen på nettsiden -->
+    <title>Arbeidskrav.2</title>
+</head>
+
+<body>
+    <!-- Hovedbeholderen for hele nettsiden -->
+    <div class="box">
+        <!-- Navigasjonsmenyen -->
+        <nav id="menu">
+            <!-- Hvert menyelement er en klikkbar karakter -->
+            <a onclick="show('HTML')" role="button" class="character"><h3>HTML</h3></a>
+            <a onclick="show('CSS')" role="button" class="character"><h3>CSS</h3></a>
+            <a onclick="show('JavaScript')" role="button" class="character"><h3>JavaScript</h3></a>
+            <a onclick="show('React')" role="button" class="character"><h3>React</h3></a>
+            <a onclick="show('Sanity and headless CMS')" role="button" class="character"><h3>Sanity og headless CMS</h3></a>
+        </nav>
+
+        <!-- Hovedområdet for innhold, som er skjult i begynnelsen -->
+        <div id="Article" class="below">
+        </div>
+
+        <!-- Eksterne JavaScript-filer for funksjonalitet -->
+        <script src="ressurser.js"></script>
+        <script src="main.js"></script>
+    </div>
+</body>
+
+</html>

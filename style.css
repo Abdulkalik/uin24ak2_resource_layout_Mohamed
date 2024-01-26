@@ -1,0 +1,91 @@
+/* Importerer Google Fonts-stilen for Montserrat */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+/* Definerer variabler for farge og fontstil i roten av dokumentet */
+:root {
+    --purple: #2A324B;
+    --blue: #58699D;
+    --grey: #E1E5EE;
+    --white: #fff; 
+
+    font-family: 'Montserrat', sans-serif;
+    --rootsize: 20px;
+    --maxsize: 1200px;
+}
+
+/* Stiler for hele nettsidens body */
+body {
+    /* Oppretter en fleksibel layout for sentrering av innhold */
+    display: flex;
+    background-color: var(--grey);
+    font-family: var(--font-family);
+    font-size: var(--rootsize);
+    margin: 0;
+    justify-content: center;
+    align-items: center;
+    height: 45rem;  /* Justerer høyden på hele siden */
+}
+
+/* Hovedboksen som omgir nettsidens innhold */
+div.box {
+    width: 80%; /* Bredde på 80% av foreldreelementet */
+    background-color: var(--white);
+    box-sizing: border-box;
+}
+
+/* Navigasjonsmenyen med mellomrom mellom elementene */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+}
+
+/* Stiler for hovedmenyen */
+#menu {
+    background-color: var(--purple);
+    color: var(--white);
+    display: flex;
+    padding: 1rem 1rem;
+    font-weight: bold;
+    border: 1px;
+    justify-content: space-between;
+    cursor: pointer;
+}
+
+/* Stiler for ul og li innenfor #menu */
+#menu ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+/* Mellomrom mellom hver li i menyen */
+#menu li {
+    margin-right: 100px; /* Juster margen for avstand mellom li-elementer */
+}
+
+/* Tekststiler for lenker innenfor menyen */
+#menu a {
+    text-decoration: none;
+    color: var(--white);
+}
+
+/* Endrer stiler for hover-effekt på lenker */
+#menu a:hover {
+    text-decoration: underline;
+}
+
+/* Responsivt design for mindre skjermer (maks bredde 768px) */
+@media (max-width: 768px) {
+    #menu {
+        flex-direction: column; /* Stabler elementer vertikalt */
+        align-items: flex-start; /* Justerer plasseringen av elementer */
+    }
+
+    /* Justerer margen for avstand mellom stakkede elementer */
+    #menu li {
+        margin: 10px 0;
+    }
+}
